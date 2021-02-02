@@ -1023,7 +1023,7 @@ button {
   }
 
   .phone-image {
-    padding: 0px 40px;
+    padding: 0px 20px;
   }
 
   .phone-image .image {
@@ -1130,7 +1130,7 @@ button {
   }
 
   .image-design {
-    padding: 0px 10px;
+    padding: 0px;
   }
 
   .text-design {
@@ -1161,5 +1161,13 @@ button {
 
   .ultimate_images .image-third {
     left: 104px;
+  }
+
+  .apps-features {
+    padding: 0px;
+  }
+
+  .apps-features__text-block {
+    padding: 0px 40px;
   }
 }
