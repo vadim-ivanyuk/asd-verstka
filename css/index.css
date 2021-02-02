@@ -4,17 +4,31 @@
   padding: 0px;
 }
 
+.wrapper-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper-between {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .align-items-center {
   display: flex;
   align-items: center;
 }
 
 .header {
+  position: relative;
   width: 100%;
-  height: max-content;
+  height: 908px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 32px;
 }
 
 .header__top {
@@ -23,7 +37,6 @@
   width: 100%;
   max-width: 1171px;
   height: 57px;
-  margin-top: 92px;
 }
 
 .header__top .name {
@@ -56,7 +69,7 @@
   color: #242f51;
   font-family: "Poppins";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: bold;
   font-style: normal;
   letter-spacing: normal;
   line-height: 44px;
@@ -77,4 +90,250 @@
   font-style: normal;
   letter-spacing: normal;
   line-height: 44px;
+  cursor: pointer;
+}
+
+.header__bottom {
+  width: 100%;
+  height: 865px;
+  background: url("file:///E:/github/asd-verstka/img/Vector_Smart_Object.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bottom-img {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 245px;
+  z-index: -1;
+}
+
+.bottom-img .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.best-app {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 3px;
+  width: 768px;
+  height: 630px;
+  margin-top: 73px;
+  background: url("file:///E:/github/asd-verstka/img/Layer_3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main-text {
+  width: 513px;
+  padding-top: 187px;
+}
+
+.main-text__editors {
+  display: flex;
+  align-items: center;
+  width: 362px;
+  height: 35px;
+  border-radius: 18px;
+  background-color: #e2eaed;
+}
+
+.main-text__editors .icon {
+  width: 39px;
+  height: 35px;
+  border-radius: 18px;
+  background-color: #feaa25;
+}
+
+.main-text__editors .text {
+  color: #242f51;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.main-text__best {
+  width: 513px;
+  color: #242f51;
+  font-family: "Poppins";
+  font-size: 60px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 75px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.main-text__increase {
+  width: 481px;
+  color: #616368;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.button-and-text {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.button-and-text__button {
+  width: 170px;
+  height: 57px;
+  border-radius: 29px;
+  background-color: #2500f9;
+  outline: none;
+  border: 0;
+  color: #ffffff;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 44px;
+}
+
+.button-and-text__text {
+  width: 152px;
+  color: #2500f9;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 44px;
+  text-align: left;
+}
+
+.phone-image {
+  width: 680px;
+  margin-top: 33px;
+}
+
+@media (max-width: 1200px) {
+  .header__top {
+    margin: 0px 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+
+  .header__bottom {
+    height: auto;
+  }
+
+  .wrapper-between {
+    flex-wrap: wrap-reverse;
+  }
+
+  .main-text {
+    padding-top: 0px;
+  }
+
+  .best-app {
+    width: 100%;
+    align-items: center;
+  }
+
+  .header {
+    height: auto;
+  }
+
+  .phone-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .align-items-center {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .top-menu {
+    width: 100%;
+    margin: 20px 57px;
+  }
+}
+
+@media (max-width: 550px) {
+  .header__top .name {
+    width: 100%;
+  }
+
+  .top-menu {
+    flex-direction: column;
+    margin: 20px 0px;
+  }
+
+  .align-items-center {
+    width: 100%;
+  }
+
+  .top-menu__item {
+    text-align: center;
+  }
+
+  .phone-image {
+    padding: 0px 40px;
+  }
+
+  .phone-image .image {
+    width: 100%;
+  }
+
+  .best-app {
+    margin: 0px;
+    padding: 0px 20px;
+    margin-top: 20px;
+  }
+
+  .main-text {
+    width: 100%;
+  }
+
+  .main-text>p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-text__best {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  .main-text__editors {
+    width: 100%;
+    height: auto;
+    padding: 4px;
+  }
+
+  .main-text__editors .icon {
+    display: none;
+  }
+
+  .button-and-text {
+    flex-direction: column;
+    width: 100%;
+  }
 }
