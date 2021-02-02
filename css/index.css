@@ -4,6 +4,12 @@
   padding: 0px;
 }
 
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .wrapper-center {
   width: 100%;
   display: flex;
@@ -12,6 +18,7 @@
 
 .wrapper-between {
   width: 100%;
+  max-width: 1600px;
   display: flex;
   justify-content: space-between;
 }
@@ -94,6 +101,8 @@
 }
 
 .header__bottom {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 865px;
   background: url("file:///E:/github/asd-verstka/img/Vector_Smart_Object.png");
@@ -228,6 +237,152 @@
   margin-top: 33px;
 }
 
+.trusted {
+  width: 100%;
+  max-width: 934px;
+  margin-top: 114px;
+}
+
+.trusted .title {
+  width: 100%;
+  color: #242f51;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.trusted .companies {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.trusted .companies .companies__item {
+  width: 150px;
+}
+
+.apps-features {
+  width: 100%;
+  padding: 0px 154px;
+  margin-top: 155px;
+  display: flex;
+}
+
+.apps-features__phone-block {
+  width: 576px;
+  height: 839px;
+  margin-right: 10px;
+}
+
+.apps-features__phone-block .image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.apps-features__text-block .title {
+  width: 281px;
+  color: #242f51;
+  font-family: "Poppins";
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 46px;
+  text-align: left;
+  margin-top: 57px;
+}
+
+.apps-features__text-block .sub-title {
+  width: 428px;
+  height: 44px;
+  color: #616368;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 26px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.preimuschestva {
+  margin-top: 50px;
+}
+
+.preimuschestva__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.preimuschestva__icon {
+  margin-right: 30px;
+  width: 88px;
+  height: 88px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preimuschestva__text {
+  width: 259px;
+}
+
+.preimuschestva__text .preimuschestva__title {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 58px;
+  text-align: left;
+}
+
+.preimuschestva__text .preimuschestva__text {
+  color: #616368;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 26px;
+  text-align: left;
+}
+
+.preimuschestva-first .preimuschestva__title {
+  color: #f55767;
+}
+
+.preimuschestva-first .preimuschestva__icon {
+  background-color: #ffecef;
+}
+
+.preimuschestva-second .preimuschestva__title {
+  color: #2563ff;
+}
+
+.preimuschestva-second .preimuschestva__icon {
+  background-color: #f4f4ff;
+}
+
+.preimuschestva-third .preimuschestva__title {
+  color: #40975f;
+}
+
+.preimuschestva-third .preimuschestva__icon {
+  background-color: #e4ffee;
+}
+
 @media (max-width: 1200px) {
   .header__top {
     margin: 0px 40px;
@@ -262,6 +417,11 @@
     display: flex;
     justify-content: center;
   }
+
+  .apps-features {
+    padding: 0px 10px;
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -273,6 +433,25 @@
   .top-menu {
     width: 100%;
     margin: 20px 57px;
+  }
+
+  .trusted {
+    margin-top: 50px;
+  }
+
+  .trusted .companies {
+    flex-direction: column;
+  }
+
+  .trusted .companies .companies__item {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .apps-features {
+    flex-direction: column-reverse;
+    align-items: center;
   }
 }
 
@@ -312,7 +491,7 @@
     width: 100%;
   }
 
-  .main-text>p {
+  .main-text > p {
     width: 100%;
     text-align: center;
   }
@@ -335,5 +514,49 @@
   .button-and-text {
     flex-direction: column;
     width: 100%;
+  }
+
+  .button-and-text__text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .apps-features__phone-block {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .apps-features__phone-block .image {
+    object-fit: cover;
+  }
+
+  .apps-features__text-block .title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .apps-features__text-block .sub-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .preimuschestva__item {
+    flex-direction: column;
+  }
+
+  .preimuschestva__icon {
+    margin-right: 0px;
+  }
+
+  .preimuschestva__text {
+    width: 100%;
+  }
+
+  .preimuschestva__text .preimuschestva__title {
+    text-align: center;
+  }
+
+  .preimuschestva__text .preimuschestva__text {
+    text-align: center;
   }
 }
