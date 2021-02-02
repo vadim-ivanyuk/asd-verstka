@@ -1154,4 +1154,12 @@ button {
     width: 100%;
     padding: 0px 20px;
   }
+
+  .ultimate_images .image-second {
+    left: -100px;
+  }
+
+  .ultimate_images .image-third {
+    left: 104px;
+  }
 }
